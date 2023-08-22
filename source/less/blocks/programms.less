@@ -3,13 +3,21 @@
 }
 
 .programms__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .programms__item {
-  width: 280px;
-  height: 266px;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  min-height: 266px;
   background-color: @basic-grey;
+  padding-left: 20px;
 }
 
 .programms__title {
@@ -17,6 +25,19 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 53px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 214px;
+    margin-top: 77px;
+  }
 }
 
 .programms__description {
@@ -26,6 +47,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: @line-height-base;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .programms__button {
