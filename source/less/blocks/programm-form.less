@@ -10,6 +10,14 @@
 
 .programm-form__list {
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.programm-form__item {
+  width: 100%;
 }
 
 .programm-form__label {
@@ -20,6 +28,20 @@
   font-weight: 400;
   line-height: @line-height-base;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.programm-form__input {
+  width: 100%;
 }
 
 .programm-form__input::placeholder {
@@ -30,6 +52,26 @@
   font-weight: 400;
   line-height: @line-height-base;
   text-transform: uppercase;
+}
+
+.programm-form__title {
+  color: @black;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.programm-form__comment {
+  width: 100%;
 }
 
 .programm-form__button {

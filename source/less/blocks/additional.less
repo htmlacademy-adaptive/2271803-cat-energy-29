@@ -12,6 +12,27 @@
 .additional__list {
   padding: 0;
   list-style-type: none;
+  display: grid;
+  gap: 19px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 80% 20%;
+    column-gap: 80px;
+    row-gap: 0;
+  }
+}
+
+.additional__item {
+  display: grid;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: min-content;
+    max-height: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .additional__item-title {
@@ -20,6 +41,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-top: 13px;
 }
 
 .additional__item-text {
@@ -29,9 +51,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin-top: 187px;
+  margin-left: 58px;
+  margin-bottom: 43px;
 }
 
 .additional__button {
-  padding: 10px 0px;
-  background-color: #68B738;
+  padding: 10px 0;
+  background-color: #68b738;
 }
