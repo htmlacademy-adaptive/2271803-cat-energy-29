@@ -1,16 +1,30 @@
-.main-footer__contacts {
-  background-color: @white;
+.main-footer {
+  background-color: @basic-grey;
 }
 
-.main-footer__contacts-top {
+.main-footer__wrapper {
+  display: grid;
+  position: relative;
+}
+
+.main-footer__top {
   display: grid;
   grid-template-columns: 140px 140px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 26px 20px;
 
   @media (min-width: @tablet-width) {
     gap: 308px;
+    padding: 60px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    gap: 87px;
+    padding-left: 80px;
+    padding-top: 60px;
   }
 }
 
@@ -39,8 +53,21 @@
   }
 }
 
-.main-footer__logo-wrapper {
+.main-footer__bottom {
+  display: grid;
+  gap: 40px;
+
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 110px;
+  }
+
+  .main-footer__copyright {
     display: flex;
     justify-content: space-between;
   }
