@@ -1,9 +1,12 @@
 .main-header {
+  color: @black;
+}
+
+.main-header--index {
   background-image: url("../img/promo-background-mobil.jpg");
   background-repeat: no-repeat;
   background-position: center 66px;
   background-size: 320px 302px;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -14,20 +17,6 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
-    color: @black;
-  }
-}
-
-.main-header--color {
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    background: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    background: none;
-    color: #111111;
   }
 }
 

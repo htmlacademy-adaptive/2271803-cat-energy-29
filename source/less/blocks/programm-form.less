@@ -1,11 +1,49 @@
 .programm-form {
   background-color: @white;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .programm-form__group {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.programm-form__information {
+margin-bottom: 24px;
+
+@media (min-width: @tablet-width) {
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  width: 570px;
+}
+}
+
+.programm-form__programms {
+margin-top: 22px;
+margin-bottom: 19px;
+
+@media (min-width: @tablet-width) {
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  width: 570px;
+}
+}
+
+.programm-form__contacts {
+margin-top: 26px;
+margin-bottom: 24px;
+}
+
+.programm-form__comments {
+margin-bottom: 23px;
+width: 100%;
 }
 
 .programm-form__list {
@@ -17,7 +55,7 @@
 }
 
 .programm-form__item {
-  width: 100%;
+  display: flex;
 }
 
 .programm-form__label {
@@ -54,6 +92,16 @@
   text-transform: uppercase;
 }
 
+.programm-form__radio-description {
+  display: inline-flex;
+  min-width: 185px;
+}
+
+.programm-form__checkbox-description {
+  display: inline-flex;
+  min-width: 130px;
+}
+
 .programm-form__title {
   color: @black;
   font-size: 24px;
@@ -72,6 +120,10 @@
 
 .programm-form__comment {
   width: 100%;
+}
+
+.programm-form__submit {
+  width: 880px;
 }
 
 .programm-form__button {
