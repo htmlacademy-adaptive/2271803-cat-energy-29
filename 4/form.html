@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--color">
+  <header class="main-header">
     <div class="main-header__nav-wrapper content-wrapper">
       <nav class="main-nav">
         <div class="main-nav__top">
@@ -23,17 +23,17 @@
         <div class="main-nav__inner">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color main-nav__link--active" href="index.html">
+              <a class="main-nav__link main-nav__link--active" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color" href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -49,31 +49,28 @@
       <p class="main-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 
       <form class="programm-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="programm-form__group">
+        <fieldset class="programm-form__group programm-form__information">
           <legend class="visually-hidden">Информация о коте.</legend>
           <ul class="programm-form__list">
             <li class="programm-form__item">
-              <label class="programm-form__label">Имя:*
-                <input class="programm-form__input input" type="text" name="name" placeholder="БАРСИК"
-                  aria-label="Поле ввода имени кота." required>
-              </label>
+              <label class="programm-form__label label" for="name">Имя:*</label>
+              <input class="programm-form__input input" type="text" id="name" name="name" placeholder="БАРСИК"
+                aria-label="Поле ввода имени кота." required>
             </li>
             <li class="programm-form__item">
-              <label class="programm-form__label">Вес (кг):*
-                <input class="programm-form__input input" type="text" name="weight" placeholder="7"
-                  aria-label="Поле ввода веса кота." required>
-              </label>
+              <label class="programm-form__label label" for="weight">Вес (кг):*</label>
+              <input class="programm-form__input input" type="text" id="weight" name="weight" placeholder="7"
+                aria-label="Поле ввода веса кота." required>
             </li>
             <li class="programm-form__item">
-              <label class="programm-form__label">Возраст (лет):
-                <input class="programm-form__input input" type="text" name="age" placeholder="7"
-                  aria-label="Поле ввода возраста кота.">
-              </label>
+              <label class="programm-form__label label" for="age">Возраст (лет):</label>
+              <input class="programm-form__input input" type="text" id="age" name="age" placeholder="7"
+                aria-label="Поле ввода возраста кота.">
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="programm-form__group">
+        <fieldset class="programm-form__group programm-form__programms">
           <legend class="visually-hidden">Выбор программы.</legend>
           <ul class="programm-form__list">
             <li class="programm-form__item">
@@ -97,32 +94,30 @@
           </ul>
         </fieldset>
 
-        <fieldset class="programm-form__group">
+        <fieldset class="programm-form__group programm-form__contacts">
           <legend class="programm-form__title title">Контактные данные (владельца кота)</legend>
           <ul class="programm-form__list">
             <li class="programm-form__item">
-              <label class="programm-form__label">E-mail:*
-                <input class="programm-form__input input" type="email" name="email" placeholder="kuklachev@gmail.com"
-                  aria-label="Поле ввода почты хозяина кота." required>
-              </label>
+              <label class="programm-form__label label" for="email">E-mail:*</label>
+              <input class="programm-form__input input" type="email" id="email" name="email"
+                placeholder="kuklachev@gmail.com" aria-label="Поле ввода почты хозяина кота." required>
             </li>
             <li class="programm-form__item">
-              <label class="programm-form__label">Телефон:*
-                <input class="programm-form__input input" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-                  aria-label="Поле ввода телефона хозяина кота." required>
-              </label>
+              <label class="programm-form__label label" for="tel">Телефон:*</label>
+              <input class="programm-form__input input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90"
+                aria-label="Поле ввода телефона хозяина кота." required>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="programm-form__group">
+        <fieldset class="programm-form__group programm-form__comments">
           <legend class="programm-form__title title">Комментарий</legend>
           <textarea class="programm-form__comment" name="comment" rows="5"
             placeholder="Расскажите обо всех повадках кота">
         </textarea>
         </fieldset>
 
-        <fieldset class="programm-form__group">
+        <fieldset class="programm-form__group programm-form__additionally">
           <legend class="programm-form__title title">Дополнительно</legend>
           <ul class="programm-form__list">
             <li class="programm-form__item">
@@ -152,10 +147,10 @@
             </li>
           </ul>
         </fieldset>
-
-        <button class="programm-form__button button" type="submit">Отправить заявку</button>
-        <span class="programm-form__text">* — Обязательные поля</span>
-
+        <div class="programm-form__submit">
+          <button class="programm-form__button button" type="submit">Отправить заявку</button>
+          <span class="programm-form__text">* — Обязательные поля</span>
+        </div>
       </form>
     </div>
 
