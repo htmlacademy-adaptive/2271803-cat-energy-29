@@ -1,21 +1,104 @@
-.choose-program {
-  margin: 0;
-  padding: 0;
-}
-
 .choose-program__wrapper {
-  background-image: url("../img/promo-background-mobil.jpg");
-  background-size: 320px 302px;
-  background-repeat: no-repeat;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 50% 50%;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 1060px;
+  }
 }
 
 .choose-program__title {
   color: @white;
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    text-align: left;
+    margin-left: 90px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @black;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .choose-program__slogan {
   color: @white;
-  font-size: @font-size-base;
+  font-size: 14px;
   line-height: 14px;
+  margin-top: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @black;
+    text-align: left;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
+.choose-program__image {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 3/5;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
+}
+
+.choose-program__button {
+  background-color: @basic-green;
+  min-height: 40px;
+  padding: 8px 64px;
+  align-items: center;
+  display: inline-flex;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px 26px;
+    max-width: 244px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px 26px;
+    max-width: 244px;
+    margin-left: 0;
+  }
+}

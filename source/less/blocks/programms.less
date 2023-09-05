@@ -3,13 +3,34 @@
 }
 
 .programms__list {
+  display: grid;
+  gap: 20px;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
 }
 
 .programms__item {
-  width: 280px;
-  height: 266px;
+  display: grid;
+  min-width: 280px;
+  min-height: 266px;
   background-color: @basic-grey;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 52px;
+    max-width: 570px;
+  }
 }
 
 .programms__title {
@@ -17,18 +38,50 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 70px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+    margin-top: 77px;
+    margin-bottom: 73px;
+  }
 }
 
 .programms__description {
   color: @special-dark-grey;
-  font-family: @font-family-base, @font-family-additional;
+  font-family: @font-family-base;
   font-size: @font-size-base;
   font-style: normal;
   font-weight: 400;
   line-height: @line-height-base;
+  margin: 0;
+  margin-bottom: 38px;
+  margin-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 316px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 61px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programms__button {
   color: @black;
   line-height: 16px;
+  margin-bottom: 18px;
+  text-align: left;
 }

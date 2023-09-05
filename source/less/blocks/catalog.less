@@ -3,12 +3,39 @@
   padding: 0;
 }
 
+.catalog__wrapper {
+  display: grid;
+  gap: 25px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 324px);
+    column-gap: 60px;
+    row-gap: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
+
 .catalog__button {
-  padding: 10px 0px;
+  padding: 10px 0;
   background-color: @basic-green;
+  grid-column: 1/-1;
 }
 
 .catalog__button-show-all {
   color: @special-dark-grey;
   background-color: @basic-grey;
+}
+
+.catalog__text {
+  color: @special-dark-grey;
+  font-family: @font-family-base;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }

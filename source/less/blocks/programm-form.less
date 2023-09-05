@@ -1,5 +1,12 @@
 .programm-form {
   background-color: @white;
+  margin-bottom: 32px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
 }
 
 .programm-form__group {
@@ -8,13 +15,76 @@
   margin: 0;
 }
 
+.programm-form__information {
+  margin-bottom: 24px;
+}
+
+.programm-form__programms {
+  margin-top: 22px;
+  margin-bottom: 19px;
+}
+
+.programm-form__contacts {
+  margin-top: 26px;
+  margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.programm-form__comments {
+  margin-bottom: 23px;
+  width: 100%;
+}
+
+.programm-form__additionally {
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
 .programm-form__list {
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.programm-form__item {
+  display: flex;
 }
 
 .programm-form__label {
   color: @special-dark-grey;
-  font-family: @font-family-base-second, @font-family-additional;
+  font-family: @font-family-base-second;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: @line-height-base;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.programm-form__input {
+  width: 100%;
+}
+
+.programm-form__input::placeholder {
+  color: @special-dark-grey;
+  font-family: @font-family-base-second;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -22,14 +92,36 @@
   text-transform: uppercase;
 }
 
-.programm-form__input::placeholder {
-  color: @special-dark-grey;
-  font-family: @font-family-base-second, @font-family-additional;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: @line-height-base;
-  text-transform: uppercase;
+.programm-form__radio-description {
+  min-width: 330px;
+}
+
+.programm-form__checkbox-description {
+  min-width: 230px;
+}
+
+.programm-form__title {
+  color: @black;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.programm-form__comment {
+  width: 100%;
+}
+
+.programm-form__submit {
+  width: 880px;
 }
 
 .programm-form__button {
@@ -39,7 +131,7 @@
 
 .programm-form__text {
   color: @black;
-  font-family: @font-family-base, @font-family-additional;
+  font-family: @font-family-base;
   font-size: @font-size-base;
   font-style: normal;
   font-weight: 400;
