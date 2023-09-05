@@ -39,7 +39,6 @@
 }
 
 .programm-form__additionally {
-
   @media (min-width: @desktop-width) {
     grid-column: 1/-1;
   }
@@ -65,6 +64,8 @@
   font-weight: 400;
   line-height: @line-height-base;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -75,11 +76,6 @@
     font-size: 20px;
     line-height: normal;
   }
-}
-
-.programm-form__label {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .programm-form__input {
