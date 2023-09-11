@@ -2,11 +2,21 @@
   color: @black;
 }
 
-.main-header--index {
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 38px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-right: 65px;
+}
+
+.main-header__choose-program {
   background-image: url("../img/promo-background-mobil.jpg");
   background-repeat: no-repeat;
-  background-position: center 66px;
   background-size: 320px 302px;
+  background-position: center top;
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -17,15 +27,6 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
+    z-index: -2;
   }
-}
-
-.main-header__logo {
-  display: flex;
-  align-items: center;
-  width: 190px;
-  height: 38px;
-  overflow: hidden;
-  text-decoration: none;
-  margin-right: 65px;
 }
