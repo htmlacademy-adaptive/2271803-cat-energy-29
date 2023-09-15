@@ -54,6 +54,8 @@
 
 .programm-form__item {
   display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .programm-form__label {
@@ -66,6 +68,7 @@
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -79,7 +82,7 @@
 }
 
 .programm-form__input {
-  width: 100%;
+  flex-grow: 1;
 }
 
 .programm-form__input::placeholder {
@@ -90,14 +93,6 @@
   font-weight: 400;
   line-height: @line-height-base;
   text-transform: uppercase;
-}
-
-.programm-form__radio-description {
-  min-width: 330px;
-}
-
-.programm-form__checkbox-description {
-  min-width: 230px;
 }
 
 .programm-form__title {
@@ -118,10 +113,6 @@
 
 .programm-form__comment {
   width: 100%;
-}
-
-.programm-form__submit {
-  width: 880px;
 }
 
 .programm-form__button {
