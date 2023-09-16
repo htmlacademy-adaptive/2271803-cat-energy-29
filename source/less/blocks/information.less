@@ -10,10 +10,34 @@
 }
 
 .information-gift {
-  background-image: url("../img/background-information-gift.jpg");
+  background-image: url("../img/information-gift-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 280px 290px;
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/information-gift-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    height: 200px;
+    background-image: url("../img/information-gift-background-tablet.jpg");
+    background-size: 707px 200px;;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/information-gift-background-tablet@2x.jpg");
+    }
+  }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    height: 289px;
+    background-image: url("../img/information-gift-background-desktop.jpg");
+    background-size: 245px 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/information-gift-background-desktop@2x.jpg");
+    }
   }
 }

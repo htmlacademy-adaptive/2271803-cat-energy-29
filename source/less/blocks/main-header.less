@@ -4,11 +4,15 @@
 
 .main-header--index {
   @media (min-width: @desktop-width) {
-    background-image: url("../img/promo-background-mobil.jpg");
+    background-image: url("../img/promo-background-image-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 720px 694px;
     margin-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-image-desktop@2x.jpg");
+    }
   }
 }
 
@@ -22,10 +26,14 @@
 }
 
 .main-header__choose-program {
-  background-image: url("../img/promo-background-mobil.jpg");
+  background-image: url("../img/promo-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background-image-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
