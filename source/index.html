@@ -49,8 +49,11 @@
         <div class="choose-program__wrapper">
           <h1 class="choose-program__title page__title title">Функциональное <br> питание для котов</h1>
           <p class="choose-program__slogan">Занялся собой? Займись котом!</p>
-          <img class="choose-program__image" src="./img/promo-mobil.png" width="280" height="270"
-            alt="Товар интернет магазина Кэт энерджи.">
+          <picture>
+            <source media="(min-width: 1300px)" width="709" height="609" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="552" height="499" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
+            <img class="choose-program__image" src="img/promo-image-mobile.png" srcset="img/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Товар интернет магазина Кэт энерджи со вкусом курицы.">
+          </picture>
           <a class="choose-program__button button" href="form.html">Подобрать программу</a>
         </div>
       </div>
@@ -123,10 +126,16 @@
         <span class="example__cost title">Затраты на питание: 15 000 руб.</span>
         <div class="example__slider slider">
           <div class="example__slider-before">
-            <img src="#" width="280" height="256" alt="Толстый кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/example__slider-before-image-tablet.png 1x, img/example__slider-before-image-tablet@2x.png 2x">
+              <img class="example__slider-before-image" src="img/example__slider-before-image-mobile.png" srcset="img/example__slider-before-image-mobile@2x.png 2x" alt="Как кот выглядит до." width="280" height="256">
+            </picture>
           </div>
           <div class="example__slider-after">
-            <img src="#" width="280" height="256" alt="Стройный кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/example__slider-after-image-tablet.png 1x, img/example__slider-after-image-tablet@2x.png 2x">
+              <img class="example__slider-after-image" src="img/example__slider-after-image-mobile.png" srcset="img/example__slider-after-image-mobile@2x.png 2x" alt="Как кот выглядит после." width="280" height="256">
+            </picture>
           </div>
           <div class="example__slider-scroller">
             <button class="example__slider-button" type="button"></button>
