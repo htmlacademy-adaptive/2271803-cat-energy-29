@@ -26,13 +26,19 @@
 }
 
 .main-header__choose-program {
-  background-image: url("../img/promo-background-image-mobile.jpg");
+  background-image: image-set(
+  url("../img/promo-background-image-mobile.webp") type("image/webp"),
+  url("../img/promo-background-image-mobile.jpg") type("image/jpeg")
+);
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-background-image-mobile@2x.jpg");
+    background-image: image-set(
+  url("../img/promo-background-image-mobile@2x.webp") type("image/webp"),
+  url("../img/promo-background-image-mobile.jpg") type("image/jpeg")
+);
   }
 
   @media (min-width: @tablet-width) {
