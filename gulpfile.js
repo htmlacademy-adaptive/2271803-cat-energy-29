@@ -24,7 +24,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -135,7 +135,6 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
-    copyImages,
     createWebp,
     svgOptimize,
     sprite
@@ -151,7 +150,6 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    copyImages,
     createWebp,
     svgOptimize,
     sprite,
